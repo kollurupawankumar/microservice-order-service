@@ -14,5 +14,11 @@ public class OrderConfiguration {
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
+	
+	@Bean
+	@LoadBalanced
+	public RestTemplate restTemplate1() {
+		return new RestTemplate();
+	}
 
 }
